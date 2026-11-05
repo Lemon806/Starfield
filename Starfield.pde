@@ -25,14 +25,32 @@ class Particle
     myY = myY + Math.sin(myAngle) * mySpeed;
   }
 
-  void show()
+  void drift()
   {
     fill(myColor);
     noStroke();
     ellipse((float)myX, (float)myY, 5, 5);
   }
 }
-class OddballParticle //inherits from Particle
+class OddballParticle extends Particle
 {
-  //your code here
-}
+  OddballParticle()
+  {
+    myX = myY = 300;
+    myAngle = Math.random()*2*Math.PI;
+    mySpeed = Math.random()*3;
+    myColor = color(100,200,90);
+  }
+  void move()
+  {
+    myX = myX + Math.cos(myAngle) * mySpeed;
+    myY = myY + Math.sin(myAngle) * mySpeed;
+    myAngle=myAngle+0.3
+  }
+
+  void drift()
+  {
+    fill(myColor);
+    noStroke();
+    ellipse((float)myX, (float)myY, 5, 5);
+  }
