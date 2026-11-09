@@ -1,5 +1,5 @@
 
-body {
+Fireworks! {
     background-color: rgb(200,200,200);
     color: rgb(0,0,0);
     font-family: "Open Sans", sans-serif;
@@ -12,11 +12,11 @@ body {
     margin-right: auto
 }
 
-header {
+Fireworks {
 	
 }
 
-footer {
+By: Nathan Hin {
 	font-style: italic;
 	font-size: 90%;
 }
